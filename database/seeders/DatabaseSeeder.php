@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
          \App\Models\User::factory()->count(500)->create();
 
         $numberOfData = 600000;
+        // $numberOfData = 50000;  //if you find error in seeding just uncomment this line
         $seededData = [];
         for ($i = 0; $i < $numberOfData; $i++) {
             $seededData[] = [
